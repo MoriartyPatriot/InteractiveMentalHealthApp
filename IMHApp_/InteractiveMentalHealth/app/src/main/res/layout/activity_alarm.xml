@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btnBack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#DEF8F9"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageButtonbtnbak"
+        android:layout_width="53dp"
+        android:layout_height="59dp"
+        app:srcCompat="@drawable/atrass" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Control de medicación"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/alarmContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <!-- Example of a single alarm entry, this will be populated dynamically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Clonazepam 8:00 a. m." />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnAddAlarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alarmContainer"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#28BCED"
+        android:text="Agrega un recordatorio"
+        android:textColor="@android:color/white" />
+</RelativeLayout>

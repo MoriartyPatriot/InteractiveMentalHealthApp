@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">InteractiveMentalHealth</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="test_psicologico">Test psicológico</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="entrar">Entrar</string>
+</resources>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SymptomatologyActivity">
+
+    <ImageView
+        android:id="@+id/btnBack"
+        android:layout_width="34dp"
+        android:layout_height="31dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/atrass" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:text="Registro de sintomatología"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:id="@+id/symptomContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_marginTop="65dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="En este menú desplegable encontrarás una lista de síntomas para llevar un control diario de tu estado anímico."
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnAddSymptom"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/symptomContainer"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="171dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@drawable/agregarr" />
+
+    <Button
+        android:id="@+id/btnGenerateTips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="41dp"
+        android:backgroundTint="#00BCD4"
+        android:text="Generar Consejos"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
+
